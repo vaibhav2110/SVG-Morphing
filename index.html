@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="js/anime.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="liquid">
+      <div class="first-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+            >
+              <stop offset="0" stop-color="#ffb75e" />
+              <stop offset="1" stop-color="#ed8f03" />
+            </linearGradient>
+          </defs>
+          <filter id="f4">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="20" />
+            <feColorMatrix
+              result="matrixOut"
+              in="offOut"
+              type="matrix"
+              values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"
+            />
+            <feGaussianBlur
+              result="blurOut"
+              in="matrixOut"
+              stdDeviation="30"
+            />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+          <path
+            id="first"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="second-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient2"
+            >
+              <stop offset="0" stop-color="#c21500" />
+              <stop offset="1" stop-color="#ffc500" />
+            </linearGradient>
+          </defs>
+          <path
+            id="second"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient2)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="third-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient3"
+            >
+              <stop offset="0" stop-color="#ee0979" />
+              <stop offset="1" stop-color="#ff6a00" />
+            </linearGradient>
+          </defs>
+          <path
+            id="third"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient3)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="first_content">
+      <div class="circles one">
+        <div class="circle outer"></div>
+        <div class="circle inner"></div>
+      </div>
+      <div class="circles two">
+        <div class="circle outer"></div>
+        <div class="circle inner"></div>
+      </div>
+      <div class="rand_circle first"></div>
+      <div class="rand_circle second"></div>
+      <div class="rand_circle third"></div>
+      <h3 class="title">
+        This is where the <br />
+        Fun Begins
+      </h3>
+      <div id="btn">
+        <p>Continue <i class="fas fa-arrow-right"></i></p>
+      </div>
+    </div>
+    <div class="second_content">
+      <div class="text_wrapper">
+        <h4>Pictoria</h4>
+        <p>The collection of thousands of exquisite photos from photographers all around the world. </p>
+        <div class="download">Download</div>
+      </div>
+      <div class="right_bg"></div>
+      <img class="app_img" src="./img/Front.png"/>
+    </div>
+  </body>
+</html>
